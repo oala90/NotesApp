@@ -20,7 +20,6 @@ class NoteViewModel @Inject constructor(
     val noteList = _noteList.asStateFlow()
 
     val content = MutableStateFlow("")
-//    val content = _content.asStateFlow()
 
     fun getAllNotes() = viewModelScope.launch {
         getListNoteUseCase().fold(

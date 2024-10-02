@@ -28,7 +28,6 @@ fun MainView(
     navigateToAddNote: () -> Unit
 ) {
     Scaffold(
-//        backgroundColor = MaterialTheme.colorScheme.background,
         floatingActionButton = {
             FloatingActionButton(onClick = navigateToAddNote) {
                 Icon(Icons.Default.Add, contentDescription = "Add Note")

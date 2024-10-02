@@ -19,31 +19,6 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-//@Composable
-//fun AddNoteView(
-//    onContent: String,
-//    onContentChanged: (String) -> Unit,
-//    addNoteToDB: () -> Unit
-//) {
-//
-//    Column {
-//        TextField(
-//            value = onContent,
-//            onValueChange = { newContent ->
-//                onContentChanged(newContent)
-//            },
-//            label = { Text("Enter your note") }
-//        )
-//        Button(onClick = {
-//            if (onContent.isNotEmpty()) {
-//                addNoteToDB()
-//            }
-//        }) {
-//            Text("Save Note")
-//        }
-//    }
-//}
-
 @Composable
 fun AddNoteView(
     onContent: String,
@@ -69,11 +44,11 @@ fun AddNoteView(
             label = { Text("Enter your note") },
             modifier = Modifier
                 .fillMaxWidth()
-                .height(200.dp) // Set height to make it look more like a note
-                .clip(RoundedCornerShape(8.dp)), // Rounded corners for a note-like effec
-            shape = RoundedCornerShape(8.dp) // Ensure rounded corners are applied
+                .height(200.dp)
+                .clip(RoundedCornerShape(8.dp)),
+            shape = RoundedCornerShape(8.dp)
         )
-        Spacer(modifier = Modifier.height(16.dp)) // Add space between TextField and Button
+        Spacer(modifier = Modifier.height(16.dp))
 
         Button(
             onClick = {
